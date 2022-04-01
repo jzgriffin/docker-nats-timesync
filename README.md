@@ -58,3 +58,9 @@ Received timestamp 1648850123661180; local time went from 2022-04-01 21:55:23.66
 Sending timestamp 1648850124160815
 Received timestamp 1648850124160815; local time went from 2022-04-01 21:55:24.160996095 +00:00 to 2022-04-01 21:55:24.160833615 +00:00
 ```
+
+## Known Problems
+
+  - Modifies the host computer's time. This is a limitation of Docker.
+  - Does not properly cache the Cargo crate directory.  This causes the
+    entire dependency graph to be rebuilt on each Docker build.
