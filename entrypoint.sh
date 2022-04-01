@@ -1,5 +1,6 @@
 #!/bin/sh
 
+nats-server --config /etc/nats/nats-server.conf &
 subscriber &
 publisher &
 

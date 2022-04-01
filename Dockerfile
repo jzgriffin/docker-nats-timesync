@@ -15,7 +15,7 @@ RUN cargo install --path subscriber
 ##
 # Deployment stage
 
-FROM alpine:latest
+FROM nats:alpine
 
 COPY --from=builder /usr/local/cargo/bin/publisher /usr/local/bin/
 COPY --from=builder /usr/local/cargo/bin/subscriber /usr/local/bin/
