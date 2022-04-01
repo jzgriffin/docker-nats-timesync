@@ -33,3 +33,28 @@ Once Docker is installed, you can build and run the container with the
 ```
 ./run.sh
 ```
+
+You will see output similar to:
+
+```
+Connecting to NATS URL localhost
+Connecting to NATS URL localhost
+[7] 2022/04/01 21:55:21.992677 [INF] Starting nats-server
+[7] 2022/04/01 21:55:21.992698 [INF]   Version:  2.7.4
+[7] 2022/04/01 21:55:21.992701 [INF]   Git:      [a86b84a]
+[7] 2022/04/01 21:55:21.992711 [INF]   Name:     NDZ4EWP6AVLSNXVAMZTTU2EEZ7JTOWHLJ5I4RTJC55TLPESMKXWSQKMT
+[7] 2022/04/01 21:55:21.992716 [INF]   ID:       NDZ4EWP6AVLSNXVAMZTTU2EEZ7JTOWHLJ5I4RTJC55TLPESMKXWSQKMT
+[7] 2022/04/01 21:55:21.992734 [INF] Using configuration file: /etc/nats/nats-server.conf
+[7] 2022/04/01 21:55:21.993303 [INF] Starting http monitor on 0.0.0.0:8222
+[7] 2022/04/01 21:55:21.993367 [INF] Listening for client connections on 0.0.0.0:4222
+[7] 2022/04/01 21:55:21.993617 [INF] Server is ready
+[7] 2022/04/01 21:55:21.993632 [INF] Cluster name is my_cluster
+[7] 2022/04/01 21:55:21.993649 [INF] Listening for route connections on 0.0.0.0:6222
+Sending timestamp 1648850122661011
+Sending timestamp 1648850123161098
+Subscribing to subject 'time.system'
+Sending timestamp 1648850123661180
+Received timestamp 1648850123661180; local time went from 2022-04-01 21:55:23.661406358 +00:00 to 2022-04-01 21:55:23.661198665 +00:00
+Sending timestamp 1648850124160815
+Received timestamp 1648850124160815; local time went from 2022-04-01 21:55:24.160996095 +00:00 to 2022-04-01 21:55:24.160833615 +00:00
+```
